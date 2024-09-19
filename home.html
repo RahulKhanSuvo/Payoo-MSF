@@ -6,36 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Payoo MFS</title>
+    <title>Home</title>
     <link rel="icon" sizes="16x16 32x32 64x64" href="./images/payoo.png">
 </head>
 
 <body>
     <main class="flex justify-center">
-        <div class="mockup-phone">
+        <div class="mockup-phone mt-8 ">
             <div class="camera"></div>
             <div class="display">
-                <div class="artboard artboard-demo phone-1">
-                    <form class="bg-white w-full p-9 rounded-3xl">
-                        <div class="">
-                            <label class="label">
-                                <span class="label-text">Mobile Number</span>
-                            </label>
-                            <input type="text" placeholder="Enter your number"
-                                class="input input-bordered border-none bg-[#F4F5F7] rounded-full" required />
+                <div class="artboard bg-white artboard-demo phone-4">
+                    <div class="flex w-full justify-between px-6">
+                        <div class="flex justify-center items-center">
+                            <div><img class="w-12 pr-2" src="./images/payoo.png " alt=""></div>
+                            <div>
+                                <h4 class="text-lg font-extrabold">$<span>45000</span></h4>
+                                <p>Available Balance</p>
+                            </div>
                         </div>
-                        <div class="">
-                            <label class="label">
-                                <span class="label-text">4 Digit Pin</span>
-                            </label>
-                            <input type="password" placeholder="Enter 4 Digit Pin"
-                                class="input input-bordered border-none bg-[#F4F5F7] rounded-full" required />
+                        <div>
+                            <button id="logout-btn" class="btn bg-white border-[#0808081A] rounded-lg">
+                                <img src="./images/Frame.png" alt="">Log Out</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-2xl ">🔥 Welcome to Payooo!</h3>
+                        <p>Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
+                    </div>
+                    <!-- all icon -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <!-- add money -->
+                        <div
+                            class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
+                            <img src="./images/Group.png" alt="">
+                            <p class="font-normal text-sm">Add Money</p>
+                        </div>
+                        <div
+                            class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
+                            <img src="./images/send 1.png" alt="">
+                            <p class="font-normal text-sm">Cashout</p>
+                        </div>
+                        <div
+                            class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
+                            <img src="./images/money 1.png" alt="">
+                            <p class="font-normal text-sm">Transfer</p>
+                        </div>
+                        <div
+                            class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
+                            <img src="./images/Group (1).png" alt="">
+                            <p class="font-normal text-sm">Get Bonus</p>
+                        </div>
+                        <div
+                            class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
+                            <img src="./images/purse 1.png" alt="">
+                            <p class="font-normal text-sm">Pay Bill</p>
+                        </div>
+                        <div
+                            class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
+                            <img src="./images/Group (2).png" alt="">
+                            <p class="font-normal text-sm">Transactions</p>
+                        </div>
 
-                        </div>
-                        <div class="form-control mt-6">
-                            <button class="btn btn-primary hover:bg-[#459cff] rounded-full bg-[#0874F2]">Login</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
