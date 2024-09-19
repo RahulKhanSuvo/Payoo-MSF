@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="./images/payoo.png">
     <title>Login</title>
     <style>
         .outfit-font {
@@ -22,7 +23,7 @@
         <div class="mockup-phone mt-5">
             <div class="camera"></div>
             <div class="display">
-                <div class="artboard artboard-demo bg-[#F4F5F7] phone-4">
+                <div class="artboard artboard-demo bg-[#F4F5F7] phone-">
                     <!-- logo section -->
                     <div class="relative">
                         <div>
@@ -39,19 +40,19 @@
                                 <label class="label">
                                     <span class="label-text">Mobile Number</span>
                                 </label>
-                                <input type="text" placeholder="Enter your number"
+                                <input id="number-input" type="text" placeholder="Enter your number"
                                     class="input input-bordered border-none bg-[#F4F5F7] rounded-full" required />
                             </div>
                             <div class="">
                                 <label class="label">
                                     <span class="label-text">4 Digit Pin</span>
                                 </label>
-                                <input type="password" placeholder="Enter 4 Digit Pin"
+                                <input id="pin-input" type="password" placeholder="Enter 4 Digit Pin"
                                     class="input input-bordered border-none bg-[#F4F5F7] rounded-full" required />
 
                             </div>
                             <div class="form-control mt-6">
-                                <button
+                                <button id="login-btn"
                                     class="btn btn-primary hover:bg-[#459cff] rounded-full bg-[#0874F2]">Login</button>
                             </div>
                         </form>
@@ -60,7 +61,7 @@
             </div>
         </div>
     </main>
-    <script src=""></script>
+    <script src="./scripts/login.js"></script>
 </body>
 
 </html>
