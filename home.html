@@ -15,12 +15,12 @@
         <div class="mockup-phone mt-8 ">
             <div class="camera"></div>
             <div class="display">
-                <div class="artboard bg-white artboard-demo phone-4">
-                    <div class="flex w-full justify-between px-6">
+                <div class="artboard  artboard-demo phone-4 bg-white">
+                    <div class="flex w-full justify-between px-6 bg-white">
                         <div class="flex justify-center items-center">
                             <div><img class="w-12 pr-2" src="./images/payoo.png " alt=""></div>
                             <div>
-                                <h4 class="text-lg font-extrabold">$<span>45000</span></h4>
+                                <h4 class="text-lg font-extrabold">$<span id="account-balance">45000</span></h4>
                                 <p>Available Balance</p>
                             </div>
                         </div>
@@ -29,12 +29,12 @@
                                 <img src="./images/Frame.png" alt="">Log Out</button>
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 bg-white">
                         <h3 class="font-bold text-2xl ">🔥 Welcome to Payooo!</h3>
                         <p>Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
                     </div>
                     <!-- all icon -->
-                    <div class="grid grid-cols-3 gap-4">
+                    <div class="grid grid-cols-3 gap-4 bg-white">
                         <!-- add money -->
                         <div
                             class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
@@ -68,10 +68,39 @@
                         </div>
 
                     </div>
+                    <!-- form section -->
+                    <div class="w-full  px-5 mt-6 bg-[#F4F5F7]">
+                        <h1 class="font-bold pt-8 pb-4">Add Money</h1>
+                        <form class="bg-white w-full p-5 rounded-3xl">
+                            <div class="">
+                                <label class="label">
+                                    <span class="label-text">Amount to Add</span>
+                                </label>
+                                <input id="input-add-money" type="text" placeholder="Add Amount"
+                                    class="input input-bordered border-none bg-[#F4F5F7] rounded-full w-full"
+                                    required />
+                            </div>
+                            <div class="">
+                                <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                </label>
+                                <input id="add-pin-input" type="password" placeholder="Enter 4 Digit Pin"
+                                    class="input input-bordered border-none bg-[#F4F5F7] rounded-full w-full"
+                                    required />
+
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="add-money-btn"
+                                    class="btn btn-primary hover:bg-[#459cff] rounded-full bg-[#0874F2]">Add
+                                    Money</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="./scripts/home.js"></script>
 </body>
 
 </html>
