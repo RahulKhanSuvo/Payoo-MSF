@@ -36,12 +36,12 @@
                     <!-- all icon -->
                     <div class="grid grid-cols-3 gap-4 bg-white">
                         <!-- add money -->
-                        <div
+                        <div id="add-toggle"
                             class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
                             <img src="./images/Group.png" alt="">
                             <p class="font-normal text-sm">Add Money</p>
                         </div>
-                        <div
+                        <div id="cashOut-toggle"
                             class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
                             <img src="./images/send 1.png" alt="">
                             <p class="font-normal text-sm">Cashout</p>
@@ -61,7 +61,7 @@
                             <img src="./images/purse 1.png" alt="">
                             <p class="font-normal text-sm">Pay Bill</p>
                         </div>
-                        <div
+                        <div id="transaction-toggle"
                             class="cursor-pointer flex flex-col items-center rounded-xl border border-[#0808081A] py-5 px-3">
                             <img src="./images/Group (2).png" alt="">
                             <p class="font-normal text-sm">Transactions</p>
@@ -69,7 +69,7 @@
 
                     </div>
                     <!--add money form section -->
-                    <div class="w-full hidden px-5 mt-6 bg-[#F4F5F7]">
+                    <div id="add-money-form" class="w-full hidden px-5 mt-6 bg-[#F4F5F7]">
                         <h1 class="font-bold pt-8 pb-4">Add Money</h1>
                         <form class="bg-white w-full p-5 rounded-3xl">
                             <div class="">
@@ -98,7 +98,7 @@
                     </div>
                     <!-- add money end -->
                     <!-- cash out start here -->
-                    <div class="w-full px-5 mt-6 bg-[#F4F5F7]">
+                    <div id="cash-out-form" class="w-full hidden px-5 mt-6 bg-[#F4F5F7]">
                         <h1 class="font-bold pt-8 pb-4">Cash Out</h1>
                         <form class="bg-white w-full p-5 rounded-3xl">
                             <div class="">
@@ -124,6 +124,12 @@
                                     Money</button>
                             </div>
                         </form>
+                    </div>
+                    <!-- cashOut end -->
+                    <!-- transaction start here -->
+                    <div id="transaction" class=" h-[376px]">
+                        <h1 class="font-bold pt-8 pb-4">Transactions History</h1>
+                        <div id="transaction-container"></div>
                     </div>
                 </div>
             </div>
